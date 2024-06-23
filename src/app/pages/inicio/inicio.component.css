@@ -1,0 +1,97 @@
+/* Estilos de la grilla */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilos del contenido */
+.grid-item {
+    padding: 20px;
+}
+
+.grid-item h1 {
+    color: #1D4981;
+    font-weight: bold;
+}
+
+.section1 {
+    width: 658px;
+}
+
+.grid-item img {
+    max-width: 100%;
+}
+
+/* Estilos del botón */
+.rounded-button {
+    border: none;
+    background-color: #1D4981;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.rounded-button:hover {
+    background-color: #004389;
+}
+
+.rounded-button svg {
+    margin-left: 5px;
+}
+
+.grid-container-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container-section-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.grid-item-2 h1{
+    font-size: 26px;
+    color: #1D4981;
+    font-weight: bold;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+}
+
+.grid-container-4 h1:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.grid-container-4 h1:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.grid-container-4 h1:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.grid-container-4 h1:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section3 {
+    width: 560px;
+}

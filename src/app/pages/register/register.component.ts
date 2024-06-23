@@ -1,0 +1,21 @@
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+@Component({
+  selector: 'app-register',
+  standalone: true,
+  imports: [],
+  templateUrl: './register.component.html',
+  styleUrl: './register.component.css'
+})
+export class RegisterComponent {
+  email: string;
+  password: string;
+  constructor(private router: Router) { 
+    this.email = ''; 
+    this.password = ''; 
+  }
+  onSubmit() {
+    this.router.navigate(['/home']);
+  }
+}

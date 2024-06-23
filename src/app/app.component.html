@@ -1,0 +1,62 @@
+<div *ngIf="router.url !== '/login' && router.url !== '/register'">
+  <nav class="navegacion">
+    <div class="logo">
+      <a routerLink="">
+        <img src="../assets/logo_azul_eafit.png" alt="">
+      </a>
+    </div>
+    <ul class="navegacion_menu">
+      <li><a routerLink="">INICIO</a></li>
+      <li><a routerLink="nosotros">NOSOTROS</a></li>
+      <li><a routerLink="contacto">CONTACTO</a></li>
+      <li><a routerLink="testimonios">TESTIMONIOS</a></li>
+    </ul>
+    <div class="user-info">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-circle"
+        viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+        <path fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
+      </svg>
+      <button class="boton-cerrar" (click)="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </nav>
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+<div *ngIf="router.url !== '/login' && router.url !== '/register'">
+  <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h3>Nosotros</h3>
+      <p>EstrategiaPyme es un libro donde encontrarasel camino para hacer crecer tu negocio.</p>
+    </div>
+    <div class="footer-section">
+      <h3>Contactanos</h3>
+      <p>Email: estrategiaPyme.gmail.com</p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+    <div class="footer-section">
+      <h3>Encuentranos en:</h3>
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">Instagram</a>
+    </div>
+    <div class="footer-section">
+      <img class="img-footer" src="../assets/logo_azul_eafit.png" alt="eafit">
+      <img class="img-footer" src="../assets/edito.png" alt="editorial">
+      <img class="img-footer" src="../assets/estrami.png" alt="estramiPyme">
+    </div>
+  </div>
+  <div class="footer-bottom">
+    Desarrollado con <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" style="color: red;" fill="currentColor"
+      class="bi bi-suit-heart-fill" viewBox="0 0 16 16">
+      <path
+        d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1" />
+    </svg> &copy; 2024 EstrategiaPyme. All rights reserved.
+  </div>
+</footer>
+</div>
