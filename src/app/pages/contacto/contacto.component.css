@@ -1,0 +1,123 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 50px; /* Ajuste de padding */
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 80px; /* Espacio superior para dejar espacio para el navbar */
+}
+
+.contact-img{
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.img-conta{
+    width: 50%;
+    height: auto;
+    border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 20px; /* Ajuste de padding para dispositivos medianos y grandes */
+    }
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    align-items: center;
+    background-color: #f9f9f9; /* Puedes ajustar el color de fondo aquí */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px; /* Ajuste de padding general */
+}
+
+@media (min-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.contact-container h1 {
+    color: #1D4981;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-container span {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-container .mb-3 {
+    margin-bottom: 20px;
+}
+
+.contact-container .form-label {
+    color: #1D4981;
+    font-weight: bold;
+}
+
+.contact-container .form-control {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.contact-container .form-control:focus {
+    border-color: #1D4981;
+    box-shadow: 0 0 5px rgba(29, 73, 129, 0.5);
+}
+
+.contact-container .form-control::placeholder {
+    color: #aaa;
+}
+
+.contact-container textarea {
+    resize: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+.contact-container .btn-primary {
+    background-color: #1D4981;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.contact-container .btn-primary:hover {
+    background-color: #004389;
+}
+
+.contact-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+@media (max-width: 767px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}

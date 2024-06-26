@@ -1,0 +1,73 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  padding-top: 10%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #004389;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.team{
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #004389;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.nombres{
+  font-weight: bold;
+  font-size: 25px;
+}
+.area{
+  color: rgb(154, 151, 151);
+  font-size: 13px;
+}
+.descrip{
+  margin-top: 10px;
+  text-align: justify;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Estilos específicos para dispositivos medianos y grandes (desktop) */
+@media (min-width: 768px) {
+  .principal {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .principal img {
+    max-width: 150px;
+    /* Tamaño ajustable según tu diseño */
+    flex-shrink: 0;
+  }
+
+  .team p {
+    margin-bottom: 10px;
+  }
+}

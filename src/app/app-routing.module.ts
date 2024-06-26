@@ -5,7 +5,9 @@ import { RegisterComponent } from './pages/register/register.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TestimonioComponent } from './pages/testimonio/testimonio.component';
+
 
 const routes: Routes = [
     { path: '', redirectTo: '/inicio', pathMatch: 'full' },
@@ -18,7 +20,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
+    imports: [RouterModule.forRoot(routes),  ReactiveFormsModule, FormsModule],
     exports: [RouterModule],
 })
 export class AppRoutingModule { }

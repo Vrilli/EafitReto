@@ -8,15 +8,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 150vh;
+    max-width: 80vw; 
     margin: 0 auto;
+    margin-top: 80px;
     height: 50vh;
 }
 
 /* Estilos para las columnas */
 .container-grid {
     flex: 1;
-    padding: 50px;
+    padding: 30px;
+    background-color: #f9f9f9; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* Ajustes para pantallas pequeñas */
@@ -42,26 +46,30 @@ label {
     font-weight: bold;
 }
 
+input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="number"],
+input[type="password"],
+select.form-select {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 20px; 
 }
 
-button[type="submit"] {
+input[type="button"] {
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color: #0056b3;
     border: none;
     color: white;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 20px; 
+    transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3;
+input[type="button"]:hover {
+    background-color: #007bff;
 }
 
 /* Estilos adicionales */
@@ -72,6 +80,11 @@ h1 {
 
 h2 {
     font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.exito{
+    font-size: 15px;
+    color: rgb(158, 155, 155);
     margin-bottom: 20px;
 }
 
