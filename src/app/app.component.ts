@@ -12,7 +12,13 @@ import { NgIf } from '@angular/common';
 export class AppComponent {
   title = 'home-store';
 
+  isMenuOpen = false;
+  
   constructor(public router: Router) { }
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 
   cerrarSesion() {
     this.router.navigate(['/login']);

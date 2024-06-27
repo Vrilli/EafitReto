@@ -7,20 +7,21 @@ import { NosotrosComponent } from './pages/nosotros/nosotros.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TestimonioComponent } from './pages/testimonio/testimonio.component';
+import { CommonModule } from '@angular/common';
 
 
 const routes: Routes = [
     { path: '', redirectTo: '/inicio', pathMatch: 'full' },
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
-    { path: 'inicio', component: InicioComponent }, 
+    { path: 'inicio', component: InicioComponent },
     { path: 'nosotros', component: NosotrosComponent },
     { path: 'contacto', component: ContactoComponent },
     { path: 'testimonios', component: TestimonioComponent },
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes),  ReactiveFormsModule, FormsModule],
+    imports: [RouterModule.forRoot(routes), ReactiveFormsModule, FormsModule, CommonModule],
     exports: [RouterModule],
 })
 export class AppRoutingModule { }

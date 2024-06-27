@@ -3,12 +3,13 @@
     grid-template-columns: 1fr;
     gap: 20px;
     align-items: center;
-    padding: 20px 50px; /* Ajuste de padding */
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin-top: 80px; /* Espacio superior para dejar espacio para el navbar */
+   
 }
+
+.content {
+    padding-top: 100px; /* Ajusta este valor según la altura de tu navbar */
+    padding-bottom: 50px; /* Ajusta este valor según la altura de tu footer */
+  }
 
 .contact-img{
     padding: 20px;
@@ -49,13 +50,13 @@
 .contact-container h1 {
     color: #1D4981;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 40px;
     margin-bottom: 10px;
 }
 
 .contact-container span {
-    color: #333;
-    font-size: 16px;
+    color: #8d8d8d;
+    font-size: 14px;
     line-height: 1.6;
     display: block;
     margin-bottom: 20px;
