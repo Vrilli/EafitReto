@@ -1,32 +1,33 @@
- <div class="content">
-  <div class="contact-container">
-    <div class="container">
-        <h1 class="text">Contactanos</h1>
+<div class="content">
+    <div class="contact-container">
+      <div class="container">
+        <h1 class="text">Contáctanos</h1>
         <span>La fuerza de esta promesa y la materialización del manual se convirtieron en semilla de lo que ahora es Estramipyme.</span>
-        <form>
-            <div class="mb-3">
-                <label for="firstName" class="form-label">Primer nombre:</label>
-                <input type="text" class="form-control" id="firstName" placeholder="Pepito" formControlName="firstName">
-                <label for="lastName" class="form-label">Primer apellido:</label>
-                <input type="text" class="form-control" id="lastName" placeholder="Perez" formControlName="lastName">
-            </div>
-            
-            <label for="email" class="form-label">Correo electrónico:</label>
-            <input type="email" class="form-control" id="email" placeholder="pepitoP@example.com" formControlName="email">
-            
-            <div class="mb-3">
-                <label for="message" class="form-label">Cuéntanos qué piensas?</label>
-                <textarea class="form-control" id="message" placeholder="Mensaje" rows="3" formControlName="message"></textarea>
-                <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-primary" type="submit">Enviar</button>
-                </div>
-            </div>
+        <form [formGroup]="formularioContacto" (ngSubmit)="enviarFormulario()">
+          <div class="mb-3">
+            <label for="firstName" class="form-label">Primer nombre:</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Pepito" formControlName="firstName">
+            <label for="lastName" class="form-label">Primer apellido:</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Perez" formControlName="lastName">
+          </div>
+  
+          <label for="email" class="form-label">Correo electrónico:</label>
+          <input type="email" class="form-control" id="email" placeholder="pepitoP@example.com" formControlName="email">
+  
+          <div class="mb-3">
+            <label for="message" class="form-label">Cuéntanos qué piensas?</label>
+            <textarea class="form-control" id="message" placeholder="Mensaje" rows="3" formControlName="message"></textarea>
+          </div>
+          
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </div>
         </form>
-    </div>
-
-    <div class="contact-img">
+      </div>
+  
+      <div class="contact-img">
         <img class="img-conta" src="../../../assets/contactanos.png" alt="contacto">
+      </div>
     </div>
-</div> 
-   
- </div>
+  </div>
+  

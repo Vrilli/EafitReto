@@ -34,7 +34,7 @@ export class LoginComponent {
        localStorage.setItem('tokenUserprueba' , data.access_token)
        this.navega.navigate(['/inicio']);
         
-      },(error) =>{                          //error callback
+      },(error) =>{                          
         console.error('error de autenticacion', error)
         if(error.status == 401){
           alert("Error en sus credenciales, intenta nuevamente");

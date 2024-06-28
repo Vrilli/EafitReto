@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contacto',
+  standalone: true,
   templateUrl: './contacto.component.html',
-  styleUrls: ['./contacto.component.css']
+  styleUrls: ['./contacto.component.css'],
+  imports: [ReactiveFormsModule]
 })
 export class ContactoComponent implements OnInit {
   
@@ -24,8 +26,10 @@ export class ContactoComponent implements OnInit {
 
   enviarFormulario() {
     if (this.formularioContacto.valid) {
-      // Lógica para enviar el formulario
       console.log(this.formularioContacto.value);
+      alert("Mensaje enviado satisfactoriamente");
+      localStorage.setItem('mensajeContacto', JSON.stringify(this.formularioContacto.value));
+      window.location.reload();
     }
   }
 }
